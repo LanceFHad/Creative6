@@ -12,6 +12,9 @@
         <form method="POST" action="/user/update">
             <label>Username:</label>
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
+	    <h2>Add a meme then press save!</h2>
+	    <label>Image URL:</label>
+	    <input type="meme" id="meme" name="meme" ng-model="user.meme"><br>
             <label>Email:</label>
             <input type="email" id="email" name="email" ng-model="user.email"><br>          
             <label>Favorite Color:</label>

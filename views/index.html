@@ -8,13 +8,14 @@
         
 <body>  
     <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome. You are Logged In as
-            <%= username %>
-        </h2>
+        <h2 id="welcomeText">Welcome: <%= username %></h2>
+	<h3>We hope you enjoy memes, here you can save your favorites!</h3>
+	<h3>Head over to your profile settings to add memes to your list!</h3>
+	<div class = "flex-container" ng-repeat = "meme in user.memes">
+	<div><img ng-src ="{{meme}}"></img></div>
+	</div>
         <a id="logoutLink" href="/logout">logout</a>
         <a id="editLink" href="/user">Edit User</a>
-        <p>Place Your Code Here
-            <p>
     </div>
     <hr>
     <span id="indexMsg">
